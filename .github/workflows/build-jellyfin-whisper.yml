@@ -1,12 +1,5 @@
 name: Build and Push Jellyfin Whisper Image
 
-# Make the published image PUBLIC (one-time, then sticky for all future pushes):
-#   1. Push so the package is first created under your account.
-#   2. GitHub → Profile → Packages → jellyfin-whisper-vulkan → Package settings.
-#   3. "Danger Zone" → Change visibility → Public.
-# GHCR has no API to set visibility, so this manual step is required exactly once;
-# every subsequent CI push keeps the package public.
-
 on:
   push:
     branches:
